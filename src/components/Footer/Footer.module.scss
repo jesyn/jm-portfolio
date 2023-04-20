@@ -1,0 +1,14 @@
+@use './../../styles/colors' as *;
+
+.container {
+    background-color: $grey;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+    font-size: 0.9rem;
+}
