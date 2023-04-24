@@ -1,0 +1,14 @@
+@use './../../styles/colors' as *;
+
+.languagesContainer {
+    background-color: $cream;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.languagesContainer button {
+    background-color: $cream;
+    font-size: 12px;
+}

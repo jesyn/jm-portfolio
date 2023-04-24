@@ -1,0 +1,37 @@
+@use './../../styles/colors' as *;
+
+.NavContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $cream;
+}
+
+.user {
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.burger_icon {
+    background-color: $cream;
+    display: flex;
+}
+
+.menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $violet;
+    overflow: hidden;
+    z-index: 2;
+}
+
+@media (min-width: 768px) {
+    .burger_icon {
+        display: none;
+    }
+}

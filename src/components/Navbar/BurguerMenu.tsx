@@ -1,14 +1,15 @@
 import React from 'react';
+import * as styles from './BurguerMenu.module.scss';
 
 const BurguerMenu = () => {
     return (
-        <div>
-            <button>
+        <>
+            <button className={styles.burguerContainer}>
                 <span role='menu_icon' className='material-icons'>
                     menu
                 </span>
             </button>
-        </div>
+        </>
     );
 };
 
