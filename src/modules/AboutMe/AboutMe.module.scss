@@ -1,0 +1,28 @@
+@use './../../styles/colors' as *;
+
+.aboutContainer {
+    background-color: $cream;
+    padding: 20px 15px 10px 15px;
+}
+
+.aboutContainer h3 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+.aboutContainer p {
+    text-align: center;
+    margin: 1rem;
+    font-size: 18px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
