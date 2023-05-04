@@ -18,8 +18,8 @@ const CustomPic = ({
     labelPosition,
 }: CustomPicProps) => {
     return (
-        <article className={styles.imgContainer}>
-            <img src={img} alt={alt} style={{ height }} />
+        <article className={styles.imgContainer} style={{ height }}>
+            <img src={img} alt={alt} />
             <h2
                 className={cn({
                     [styles['center']]: labelPosition === 'center',
