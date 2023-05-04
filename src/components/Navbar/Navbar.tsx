@@ -6,13 +6,11 @@ import Menu from './Menu';
 import * as styles from './Navbar.module.scss';
 import Drawer from './Drawer';
 import LanguagesButton from './LanguagesButton';
-import cn from 'classnames';
 
 const Navbar = () => {
     const userName = process.env.GATSBY_USER_NAME;
     const isMobile = useMediaQuery({ query: `(max-width: ${MD})` });
-    const [drawer, setDrawer] = useState<null | boolean>(null);
-    //const menu = drawer ? styles['openMenu'] : styles['closeMenu'];
+    const [drawer, setDrawer] = useState(false);
 
     if (!userName) {
         throw new Error('username not found in env');
@@ -36,16 +34,7 @@ const Navbar = () => {
                 <Menu />
             )}
 
-            {drawer !== null && (
-                <div
-                    className={cn(styles.menu, {
-                        [styles['openMenu']]: drawer,
-                        [styles['closeMenu']]: !drawer,
-                    })}
-                >
-                    {isMobile && <Drawer closeDrawer={handdleDrawer} />}
-                </div>
-            )}
+            {isMobile && <Drawer show={drawer} closeDrawer={handdleDrawer} />}
         </div>
     );
 };

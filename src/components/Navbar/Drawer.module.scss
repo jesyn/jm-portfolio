@@ -52,6 +52,25 @@
     text-decoration: none;
     color: $darkBlue;
 }
+
 .links :hover {
     font-weight: Bold;
+}
+
+.drawer {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    transition: opacity 0.3s ease-in-out,
+        transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateX(100%);
+}
+
+.open {
+    transform: translateX(0);
 }

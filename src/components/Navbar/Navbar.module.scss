@@ -17,46 +17,6 @@
     display: flex;
 }
 
-.menu {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-}
-
-.openMenu {
-    display: block;
-    animation: scale-up-horizontal-right 0.8s;
-
-    @keyframes scale-up-horizontal-right {
-        0% {
-            transform: scaleX(0.4);
-            transform-origin: right center;
-        }
-        100% {
-            transform: scaleX(1);
-            transform-origin: right center;
-        }
-    }
-}
-.closeMenu {
-    animation: slide-rotate-vertical-right 0.8s linear both;
-
-    @keyframes slide-rotate-vertical-right {
-        0% {
-            transform: translateX(0) rotateY(0);
-        }
-        100% {
-            transform: translateX(150px) rotateY(-90deg);
-            //display: none;
-        }
-    }
-}
-
 @media (min-width: 768px) {
     .burger_icon {
         display: none;
