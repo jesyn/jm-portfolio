@@ -4,10 +4,6 @@ require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
 });
 
-console.log({
-    env: process.env.NODE_ENV,
-    username: process.env.GATSBY_USER_NAME,
-});
 const config: GatsbyConfig = {
     siteMetadata: {
         title: `jm-porfolio`,
