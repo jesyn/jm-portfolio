@@ -9,7 +9,7 @@ export interface IExperienceCarrousel {
     title: string;
     company: string;
     description: string;
-    label: 'experiencia' | 'proyecto';
+    label: 'experiencia >' | 'proyecto >';
 }
 const ExperienceCarrousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
