@@ -15,13 +15,19 @@ function Drawer({ closeDrawer }: DrawerProps) {
             </div>
             <ul className={styles.burguer_list}>
                 <li onClick={closeDrawer}>
-                    <Link to='/'> Inicio </Link>{' '}
+                    <Link to='/' className={styles.links}>
+                        Inicio
+                    </Link>
                 </li>
                 <li onClick={closeDrawer}>
-                    <Link to='/about-me'> Sobre mí </Link>
+                    <Link to='/about-me' className={styles.links}>
+                        Sobre mí
+                    </Link>
                 </li>
                 <li onClick={closeDrawer}>
-                    <Link to='/proyects'>Proyectos</Link>{' '}
+                    <Link to='/proyects' className={styles.links}>
+                        Proyectos
+                    </Link>
                 </li>
             </ul>
         </div>
