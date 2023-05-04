@@ -1,0 +1,31 @@
+@use './../../styles/colors' as *;
+
+.contactContainer {
+    background-color: $cream;
+    text-align: center;
+    padding: 20px 15px 10px 15px;
+}
+
+.contactContainer h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.contactContainer p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.contactDetails {
+    padding: 10px;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
