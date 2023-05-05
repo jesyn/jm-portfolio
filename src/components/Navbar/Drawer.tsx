@@ -6,9 +6,10 @@ import cn from 'classnames';
 interface DrawerProps {
     closeDrawer: () => void;
     show: boolean;
+    links: { to: string; name: string }[];
 }
 
-function Drawer({ closeDrawer, show }: DrawerProps) {
+function Drawer({ closeDrawer, show, links }: DrawerProps) {
     return (
         <div
             className={cn(styles.drawer, {
@@ -21,21 +22,13 @@ function Drawer({ closeDrawer, show }: DrawerProps) {
                     <h2> Menú </h2>
                 </div>
                 <ul className={styles.burguer_list}>
-                    <li onClick={closeDrawer}>
-                        <Link to='/' className={styles.links}>
-                            Inicio
-                        </Link>
-                    </li>
-                    <li onClick={closeDrawer}>
-                        <Link to='/about-me' className={styles.links}>
-                            Sobre mí
-                        </Link>
-                    </li>
-                    <li onClick={closeDrawer}>
-                        <Link to='/proyects' className={styles.links}>
-                            Proyectos
-                        </Link>
-                    </li>
+                    {links.map((link) => (
+                        <li key={link.to} onClick={closeDrawer}>
+                            <Link to={link.to} className={styles.links}>
+                                {link.name}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
             </div>
         </div>
