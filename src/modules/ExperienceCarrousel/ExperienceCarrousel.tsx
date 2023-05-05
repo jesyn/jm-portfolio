@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { experience } from '../../lib/Experience';
 import * as styles from './ExperienceCarrousel.module.scss';
 import cn from 'classnames';
+import ChevronLeft from '../../components/Icons/ChevronLeft';
+import ChevronRight from '../../components/Icons/ChevronRight';
 
 export interface IExperienceCarrousel {
     id: number;
@@ -35,21 +37,7 @@ const ExperienceCarrousel = () => {
                     [styles['desable']]: currentIndex === 0,
                 })}
             >
-                <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='icon icon-tabler icon-tabler-chevron-left'
-                    width='28'
-                    height='28'
-                    viewBox='0 0 24 24'
-                    strokeWidth='1.5'
-                    stroke='#ffffff'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                >
-                    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                    <polyline points='15 6 9 12 15 18' />
-                </svg>
+                <ChevronLeft />
             </button>
             <article
                 key={experience[currentIndex].id}
@@ -69,21 +57,7 @@ const ExperienceCarrousel = () => {
                     [styles['desable']]: currentIndex === lastIndex,
                 })}
             >
-                <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    className='icon icon-tabler icon-tabler-chevron-right'
-                    width='28'
-                    height='28'
-                    viewBox='0 0 24 24'
-                    strokeWidth='1.5'
-                    stroke='#ffffff'
-                    fill='none'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                >
-                    <path stroke='none' d='M0 0h24v24H0z' fill='none' />
-                    <polyline points='9 6 15 12 9 18' />
-                </svg>
+                <ChevronRight />
             </button>
         </section>
     );
