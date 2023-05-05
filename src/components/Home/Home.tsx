@@ -1,12 +1,15 @@
 import React from 'react';
-import { CustomPic, AboutMe } from '../../modules';
-import CustomList from '../../modules/CustomList';
-import Education from '../../modules/Education';
-import ExperienceCarrousel from '../../modules/ExperienceCarrousel';
+import {
+    CustomPic,
+    AboutMe,
+    CustomList,
+    Education,
+    ExperienceCarrousel,
+    Contact,
+} from '../../modules';
 import { hardSkills, softSkills, languages } from '../../lib';
 
 import Grid from '../Grid/Grid';
-import Contact from '../../modules/Contact/Contact';
 import { darkBlue } from '../../utils/constants';
 import softSkillPic from './../../../static/soft-skills-pic.jpg';
 import languagesPic from './../../../static/languages.jpg';
@@ -60,7 +63,7 @@ export const Home = () => {
                     />
                     <Contact />
                     <CustomList
-                        title='lenguages'
+                        title='idiomas'
                         list={languages}
                         background={`url('${languagesPic}')`}
                     />
