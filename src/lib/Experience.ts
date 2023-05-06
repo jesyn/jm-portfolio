@@ -3,8 +3,8 @@ import { IExperienceCarrousel } from '../modules/ExperienceCarrousel/ExperienceC
 export const experience: IExperienceCarrousel[] = [
     {
         id: 1,
-        date: '2022',
-        title: 'desarrollo web - cars booking',
+        date: 'Mar 2022 - Dic 2022',
+        title: 'aplicación web - cars booking',
         company: 'Digital House',
         description:
             '"Desarrollo completo de un sitio web para alquiler de autos, utilizando la metodología ágil Scrum. Los usuarios podrán acceder a una plataforma fácil de usar que les permitirá crear una cuenta, reservar un auto y ver un registro completo de sus reservas anteriores."',
@@ -12,7 +12,7 @@ export const experience: IExperienceCarrousel[] = [
     },
     {
         id: 2,
-        date: '2023',
+        date: 'Feb 2023 - Mayo 2023',
         title: 'buscador de usuarios de github',
         company: 'Frontend mentor',
         description:
@@ -21,7 +21,7 @@ export const experience: IExperienceCarrousel[] = [
     },
     {
         id: 3,
-        date: '2023',
+        date: 'Feb 2023 - Mayo 2023',
         title: 'rick and morty',
         company: 'Digital House',
         description:
@@ -30,11 +30,28 @@ export const experience: IExperienceCarrousel[] = [
     },
     {
         id: 4,
-        date: '2023',
+        date: 'Ene 2023 - Mar 2023',
         title: 'Control deslizante de testimonios',
         company: 'Frontend mentor',
         description:
-            '"Componente que se adapta automáticamente al tamaño de pantalla del dispositivo del usuario, y muestra una serie de testimonios en forma de diapositivas que se pueden navegar utilizando controles deslizantes."',
+            '"Testimonios en forma de diapositivas que se pueden navegar utilizando controles deslizantes. Se adapta automáticamente al tamaño de pantalla del dispositivo del usuario."',
         label: 'proyecto >',
+    },
+    {
+        id: 5,
+        date: 'May 2023 - Jun 2023',
+        title: 'porfolio',
+        company: 'Freelancer',
+        description:
+            '"Sitio web estaría construido utilizando Gatsby, donde se podrá ver en detalle mi infomarción personal, descarga de CV y experiencia."',
+        label: 'proyecto >',
+    },
+    {
+        id: 6,
+        date: 'May 2023 - actualiadad',
+        title: 'pizzería rémolo',
+        company: 'Id for ideas',
+        description: '"Aplicación para el armado y pedido de pizzas"',
+        label: 'experiencia >',
     },
 ];
