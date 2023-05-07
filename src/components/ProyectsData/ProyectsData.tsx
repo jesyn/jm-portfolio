@@ -4,7 +4,7 @@ import * as styles from './ProyectsData.module.scss';
 import { proyectsInfo } from '../../lib/ProyectsInfo';
 import Github from '../Icons/Github';
 import Web from '../Icons/Web';
-import Hammer from '../Icons/hammer';
+import Hammer from '../Icons/Hammer';
 
 export interface IProyectsInfo {
     id: number;
