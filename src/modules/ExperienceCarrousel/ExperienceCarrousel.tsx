@@ -4,6 +4,7 @@ import * as styles from './ExperienceCarrousel.module.scss';
 import cn from 'classnames';
 import ChevronLeft from '../../components/Icons/ChevronLeft';
 import ChevronRight from '../../components/Icons/ChevronRight';
+import { Link } from 'gatsby';
 
 export interface IExperienceCarrousel {
     id: number;
@@ -47,9 +48,10 @@ const ExperienceCarrousel = () => {
                 <h3>{experience[currentIndex].title}</h3>
                 <h4>{experience[currentIndex].company}</h4>
                 <p>{experience[currentIndex].description}</p>
-                <h2 className={styles.title}>
+
+                <Link to='/proyects' className={styles.title}>
                     {experience[currentIndex].label}
-                </h2>
+                </Link>
             </article>
             <button
                 onClick={handleNextClick}
