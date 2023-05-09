@@ -2,7 +2,7 @@ import React from 'react';
 import PersonalContact from '../ContactSection/ContactSection';
 import * as styles from './PersonalInfo.module.scss';
 import cv from './../../../static/CV.pdf';
-import Download from '../Icons/download';
+import Download from './../Icons/Download';
 
 const PersonalInfo = () => {
     const handleDownloadCV = () => {
