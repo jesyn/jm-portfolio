@@ -29,28 +29,10 @@ export const Home = () => {
                         img='/desk.jpg'
                         height='80px'
                         alt='imagen de escritorio'
-                        label='mi estudio'
                         labelPosition='center'
                     />
-                    <CustomPic
-                        img='/laptop.jpg'
-                        height='80px'
-                        alt='imagen de escritorio'
-                    />
-                    <ExperienceCarrousel />
-                    <CustomPic
-                        img='/dog.jpeg'
-                        height='300px'
-                        alt='foto perro'
-                        label='mi perra, Ibiza'
-                        labelPosition='top'
-                    />
                     <Education />
-                    <CustomPic
-                        img='/hard-skills-pic.png'
-                        height='auto'
-                        alt='logos lenguages programación'
-                    />
+                    <ExperienceCarrousel />
                     <CustomList
                         title='habilidades técnicas'
                         list={hardSkills}
