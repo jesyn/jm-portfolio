@@ -1,6 +1,10 @@
 export const hardSkills = [
-    'react',
-    'react testing library',
+    'react, next, gatsby',
+    'jest, rtl',
     'typescript',
-    'redux',
+    'redux, rtk',
+    'java, spring boot',
+    'mysql , mongodb',
+    'sass, tailwind',
+    'git, gitflow',
 ];

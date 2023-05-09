@@ -5,10 +5,10 @@ export const proyectsInfo: IProyectsInfo[] = [
         id: 1,
         date: 'Mar 2022 - Dic 2022',
         img: { src: '/cars-booking.gif', alt: 'gift pagina web' },
-        title: 'aplicación web - cars booking',
+        title: 'aplicación web',
         company: 'Digital House',
         description:
-            '"Desarrollo completo de un sitio web para alquiler de autos, utilizando la metodología ágil Scrum. Los usuarios podrán acceder a una plataforma fácil de usar que les permitirá crear una cuenta, reservar un auto y ver un registro completo de sus reservas anteriores."',
+            '"Análisis y construcción de la arquitectura de una aplicación, utilizando React y Sass para el desarrollo del frontend. Además, he implementado pruebas unitarias para garantizar su calidad y funcionalidad. Descubre una aplicación bien estructurada y de alta calidad que ofrece una experiencia de usuario excepcional."',
         technologies: ['react', 'sass', 'api-rest', 'spring boot', 'mysql'],
         github: 'https://github.com/jesyn/carsbooking-frontend',
         url: '',
@@ -16,11 +16,11 @@ export const proyectsInfo: IProyectsInfo[] = [
     {
         id: 2,
         date: 'Feb 2023 - Mayo 2023',
-        img: { src: '/github-search.jpg', alt: 'gift pagina web' },
-        title: 'buscador de usuarios de github',
+        img: { src: '/github-search.gif', alt: 'gift pagina web' },
+        title: 'buscador usuarios github',
         company: 'Frontend mentor',
         description:
-            '"Busca cualquier usuario de Github y visualiza su información en la tarjeta que se encuentra debajo. Podrás ver información relevante del usuario en la tarjeta y también el historial de búsquedas realizadas".',
+            '"Buscador de usuarios de Github utilizando React y el hook UseReducer para gestionar el estado de la aplicación. Con esta herramienta, podrás buscar y visualizar información de usuarios, así como acceder al historial de búsquedas realizadas."',
         technologies: ['react', 'api-rest'],
         github: 'https://github.com/jesyn/github_user_search',
         url: 'https://github-user-search-jesyn.vercel.app/',
@@ -32,7 +32,7 @@ export const proyectsInfo: IProyectsInfo[] = [
         title: 'rick and morty',
         company: 'Digital House',
         description:
-            '"Página que muestra una colección de personajes de la popular serie "Rick and Morty". Los usuarios pueden buscar entre los diferentes personajes utilizando un buscador y seleccionar sus favoritos para agregarlos a una lista personalizada."',
+            '"Página web que presenta una colección de personajes de la popular serie "Rick and Morty", utilizando React y Typescript. Gracias a las peticiones por API-Rest, podrás realizar búsquedas de personajes y agregarlos a una lista de favoritos personalizada."',
         technologies: ['react', 'redux', 'typescript', 'api-rest', 'jsdoc'],
         github: 'https://github.com/jesyn/Rick-and-Morty',
         url: 'https://rick-and-morty-jesyn.vercel.app/',
@@ -41,10 +41,10 @@ export const proyectsInfo: IProyectsInfo[] = [
         id: 4,
         date: 'Ene 2023 - Mar 2023',
         img: { src: '/testimonial.gif', alt: 'gift pagina web' },
-        title: 'Control deslizante de testimonios',
+        title: 'testimonios deslizantes ',
         company: 'Frontend mentor',
         description:
-            '"Testimonios en forma de diapositivas que se pueden navegar utilizando controles deslizantes. Se adapta automáticamente al tamaño de pantalla del dispositivo del usuario."',
+            '"Testimonios en forma de diapositivas que podrás explorar utilizando controles deslizantes. La sección está desarrollada con React y Sass, y se ha diseñado pensando en la versión móvil como prioridad para asegurar una excelente experiencia de usuario en cualquier dispositivo."',
         technologies: ['react', 'sass'],
         github: 'https://github.com/jesyn/-coding-bootcamp-testimonials-slider',
         url: 'https://jesyn.github.io/-coding-bootcamp-testimonials-slider/',
@@ -56,18 +56,19 @@ export const proyectsInfo: IProyectsInfo[] = [
         title: 'porfolio',
         company: 'Freelancer',
         description:
-            '"Sitio web estaría construido utilizando Gatsby, donde se podrá ver en detalle mi infomarción personal, descarga de CV y experiencia."',
+            '"Sitio web personal utilizando Gatsby, donde podrás conocer en detalle mi información personal, descargar mi CV y explorar mi experiencia profesional. Descubre quién soy, mi trayectoria y habilidades en esta página web personalizada."',
         technologies: ['gatsby', 'react', 'typescript', 'sass'],
         github: 'https://github.com/jesyn/jm-portfolio',
         url: 'https://jm-portfolio-85f3gfx8w-jesyn.vercel.app/',
     },
     {
         id: 6,
-        date: 'May 2023 - actualiadad',
+        date: 'May 2023 - actualidad',
         img: { src: '/logo-pizza.jpg', alt: 'logo pizzería' },
         title: 'pizzería rémolo',
         company: 'Id for ideas',
-        description: '"Aplicación para el armado y pedido de pizzas"',
+        description:
+            '"Análisis y construcción de la arquitectura de una aplicación para el armado y pedido de pizzas. Para el desarrollo del frontend, he utilizado las tecnologías Next y Tailwind, que me han permitido crear una interfaz de usuario amigable y atractiva. Descubre una forma fácil y personalizada de armar tu pizza y hacer tu pedido en esta aplicación única."',
         technologies: [
             'nextjs',
             'tailwind',
