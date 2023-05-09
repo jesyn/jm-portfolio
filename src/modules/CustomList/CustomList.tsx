@@ -19,6 +19,7 @@ const CustomList = ({ list, title, background }: CustomListProps) => {
             }}
         >
             <div className={styles.overlay} />
+            <h2 className={styles.title}> {title} </h2>
             <ul className={styles.list}>
                 {list.map((li, index) => (
                     <li key={index}>
@@ -27,7 +28,6 @@ const CustomList = ({ list, title, background }: CustomListProps) => {
                     </li>
                 ))}
             </ul>
-            <h2 className={styles.title}> {title} </h2>
         </article>
     );
 };
