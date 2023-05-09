@@ -31,7 +31,9 @@ const ProyectsData = () => {
                         <img src={proyect.img.src} alt={proyect.img.alt} />
                     </div>
                     <h4> {proyect.date} </h4>
-                    <h3> {proyect.title} </h3>
+                    <h3>
+                        {proyect.title} - {proyect.company}
+                    </h3>
                     <p className={styles.text}>{proyect.description}</p>
                     <ul>
                         {proyect.technologies.map((tec) => (
@@ -66,6 +68,7 @@ const ProyectsData = () => {
                             </div>
                         )}
                     </div>
+                    <div className={styles.proyectline} />
                 </article>
             ))}
 
