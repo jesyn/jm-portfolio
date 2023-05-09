@@ -2,6 +2,7 @@ import React from 'react';
 import PersonalContact from '../ContactSection/ContactSection';
 import * as styles from './PersonalInfo.module.scss';
 import cv from './../../../static/CV.pdf';
+import Download from '../Icons/download';
 
 const PersonalInfo = () => {
     const handleDownloadCV = () => {
@@ -36,6 +37,7 @@ const PersonalInfo = () => {
             </p>
             <button onClick={handleDownloadCV}>
                 <h3> descargar mi CV </h3>
+                <Download />
             </button>
             <PersonalContact />
         </div>
