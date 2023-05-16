@@ -5,6 +5,7 @@ import { proyectsInfo } from '../../lib/ProyectsInfo';
 import Github from '../Icons/Github';
 import Web from '../Icons/Web';
 import Hammer from '../Icons/Hammer';
+import { ScrollToTopButton } from '../Buttons/Scrolltotop';
 
 export interface IProyectsInfo {
     id: number;
@@ -71,7 +72,7 @@ const ProyectsData = () => {
                     <div className={styles.proyectline} />
                 </article>
             ))}
-
+            <ScrollToTopButton />
             <PersonalContact />
         </div>
     );
