@@ -8,11 +8,11 @@ interface profileLinkProps {
 
 const ProfileLink = ({ linkUrl, linkData }: profileLinkProps) => {
     return (
-        <div className={styles.profileContainer}>
+        <section className={styles.profileContainer}>
             <a href={linkUrl} target='_blank' rel='noopener noreferrer'>
                 {linkData}
             </a>
-        </div>
+        </section>
     );
 };
 
