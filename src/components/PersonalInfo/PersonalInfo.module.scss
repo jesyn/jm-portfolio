@@ -10,7 +10,7 @@
     margin-left: 15px;
 }
 
-.line {
+.mobileLine {
     height: 1px;
     background-color: $violet;
     margin: 25px 15px 25px 15px;
@@ -18,7 +18,7 @@
 
 .text {
     margin: 25px 15px 5px 15px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     text-align: justify;
 }
@@ -39,5 +39,40 @@
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 400;
+    }
+}
+
+@media (min-width: 768px) {
+    .personalContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 10%;
+    }
+    .personalContainer h1 {
+        padding-top: 40px;
+    }
+    .mobileLine {
+        display: none;
+    }
+    .infoContainer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .desktopLine {
+        background-color: black;
+        height: 0.5px;
+        margin: 15px;
+    }
+    .info {
+        display: flex;
+        width: 80%;
+    }
+    .personalContainer button {
+        height: 40px;
+        h3 {
+            font-size: 14px;
+        }
     }
 }
