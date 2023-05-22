@@ -3,3 +3,11 @@
 .grid > * {
     border: 2px solid $darkBlue;
 }
+
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+        grid-template-rows: repeat(3, 1fr); /* 3 filas iguales */
+    }
+}

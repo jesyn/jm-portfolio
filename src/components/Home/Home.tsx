@@ -15,21 +15,33 @@ import softSkillPic from './../../../static/soft-skills-pic.jpg';
 import languagesPic from './../../../static/languages.jpg';
 import { ScrollToTopButton } from '../Buttons/Scrolltotop';
 import ProfileLink from '../../modules/ProfileLink/ProfileLink';
+import useBreakpoint from '../../hooks/useBreakpoint';
 
 export const Home = () => {
+    const bk = useBreakpoint();
+    console.log(bk);
+
     return (
         <>
             <Grid>
                 <>
                     <CustomPic
                         img='/profile-pic.jpg'
-                        height='300px'
+                        height={
+                            ['md', 'lg'].includes(bk as string)
+                                ? '100%'
+                                : '300px'
+                        }
                         alt='imagen de perfil'
                     />
                     <AboutMe />
                     <CustomPic
                         img='/desk.jpg'
-                        height='80px'
+                        height={
+                            ['md', 'lg'].includes(bk as string)
+                                ? '100%'
+                                : '80px'
+                        }
                         alt='imagen de escritorio'
                         labelPosition='center'
                     />
@@ -60,7 +72,7 @@ export const Home = () => {
                         linkData={'Linkedin'}
                     />
                     <ProfileLink
-                        linkUrl='jesica.munoz.avigliano@gmail.com'
+                        linkUrl='mailto:jesica.munoz.avigliano@gmail.com'
                         linkData={'Email'}
                     />
                 </>
