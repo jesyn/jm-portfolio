@@ -4,7 +4,7 @@ import Linkedin from './../Icons/Linkedin';
 
 const ContactSection = () => {
     return (
-        <div className={styles.contactContainer}>
+        <section className={styles.contactContainer}>
             <div className={styles.contactInfo}>
                 <p> jesica.munoz.avigliano@gmail.com </p>
                 <p> +54 11 3047 4811</p>
@@ -16,7 +16,7 @@ const ContactSection = () => {
             >
                 <Linkedin />
             </a>
-        </div>
+        </section>
     );
 };
 
