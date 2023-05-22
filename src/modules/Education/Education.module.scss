@@ -1,6 +1,8 @@
 @use './../../styles/colors' as *;
 
 .educationContainer {
+    display: flex;
+    flex-direction: column;
     background-color: $greyBlue;
     padding: 10px;
     text-align: center;
@@ -32,4 +34,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .educationContainer {
+        gap: 60px;
+    }
 }
