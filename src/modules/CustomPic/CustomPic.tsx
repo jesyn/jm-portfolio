@@ -1,17 +1,22 @@
 import React from 'react';
 import * as styles from './CustomPic.module.scss';
+import cn from 'classnames';
 
 interface CustomPicProps {
     img: string;
     height: string;
     alt: string;
-    label?: string;
-    labelPosition?: 'center' | 'top' | 'bottom';
+    disable?: boolean;
 }
 
-const CustomPic = ({ img, height, alt }: CustomPicProps) => {
+const CustomPic = ({ img, height, alt, disable }: CustomPicProps) => {
     return (
-        <article className={styles.imgContainer} style={{ height }}>
+        <article
+            className={cn(styles.imgContainer, {
+                [styles['desable']]: disable,
+            })}
+            style={{ height }}
+        >
             <img src={img} alt={alt} />
         </article>
     );
