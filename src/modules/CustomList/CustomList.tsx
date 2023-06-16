@@ -11,23 +11,25 @@ interface CustomListProps {
 const CustomList = ({ list, title, background }: CustomListProps) => {
     return (
         <article
-            className={styles.listContainer}
+            className={styles.container}
             style={{
                 background,
-                backgroundSize: '100% auto',
+                backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
         >
-            <div className={styles.overlay} />
             <h2 className={styles.title}> {title} </h2>
-            <ul className={styles.list}>
-                {list.map((li, index) => (
-                    <li key={index}>
-                        <CheckList />
-                        {li}
-                    </li>
-                ))}
-            </ul>
+            <div className={styles.overlay} />
+            <section className={styles.listContainer}>
+                <ul className={styles.list}>
+                    {list.map((li, index) => (
+                        <li key={index}>
+                            <CheckList />
+                            {li}
+                        </li>
+                    ))}
+                </ul>
+            </section>
         </article>
     );
 };
