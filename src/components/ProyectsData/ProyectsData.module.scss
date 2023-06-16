@@ -39,7 +39,7 @@
 .proyects img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .proyects h4 {
@@ -71,29 +71,6 @@
     }
 }
 
-.icons {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-    a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: $violet;
-        gap: 5px;
-    }
-}
-
-.hammer {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    span {
-        color: $violet;
-    }
-}
-
 @media (min-width: 768px) {
     .container {
         display: flex;
@@ -113,10 +90,7 @@
     .image {
         flex-direction: column;
         gap: 15px;
-        max-height: 200px;
-        img {
-            object-fit: contain;
-        }
+        height: 200px;
     }
     .desktopLine {
         height: 1px;
@@ -125,8 +99,24 @@
     }
     .proyectsContainer {
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 15px;
+    }
+    .iconContainer {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        align-content: end;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .proyectsContainer {
+        display: grid;
         grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-        grid-template-rows: repeat(2, 1fr); /* 3 filas iguales */
+        grid-template-rows: repeat(2, 1fr); /* 2 filas iguales */
         gap: 15px;
     }
 }

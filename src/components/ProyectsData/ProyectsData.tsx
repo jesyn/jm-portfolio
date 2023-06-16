@@ -2,11 +2,8 @@ import React from 'react';
 import PersonalContact from '../ContactSection/ContactSection';
 import * as styles from './ProyectsData.module.scss';
 import { proyectsInfo } from '../../lib/ProyectsInfo';
-import Github from '../Icons/Github';
-import Web from '../Icons/Web';
-import Hammer from '../Icons/Hammer';
 import { ScrollToTopButton } from '../Buttons/Scrolltotop';
-import useLayout from '../../hooks/useLayout';
+import ProyectIcons from './ProyectIcons';
 
 export interface IProyectsInfo {
     id: number;
@@ -22,10 +19,8 @@ export interface IProyectsInfo {
 }
 
 const ProyectsData = () => {
-    const { height } = useLayout();
-
     return (
-        <section className={styles.container} /* style={{ height }} */>
+        <section className={styles.container}>
             <h1> Mis últimos proyectos </h1>
             <div className={styles.mobileLine} />
             <div className={styles.proyectsContainer}>
@@ -45,33 +40,12 @@ const ProyectsData = () => {
                                 <li> {tec} </li>
                             ))}
                         </ul>
-                        <div className={styles.icons}>
-                            {!!proyect.github && (
-                                <a
-                                    href={proyect.github}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                >
-                                    <Github />
-                                    <span> Ir a github </span>
-                                </a>
-                            )}
-                            {!!proyect.url && (
-                                <a
-                                    href={proyect.url}
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                >
-                                    <Web />
-                                    <span> Ir al webSite</span>
-                                </a>
-                            )}
-                            {proyect.underConstruction && (
-                                <div className={styles.hammer}>
-                                    <Hammer />
-                                    <span> En construcción </span>
-                                </div>
-                            )}
+                        <div className={styles.iconContainer}>
+                            <ProyectIcons
+                                github={proyect.github}
+                                url={proyect.url}
+                                underConstruction={proyect.underConstruction}
+                            />
                         </div>
                         <div className={styles.proyectline} />
                     </article>
