@@ -4,6 +4,7 @@ import * as styles from './PersonalInfo.module.scss';
 import cv from './../../../static/CV.pdf';
 import Download from './../Icons/Download';
 import useLayout from '../../hooks/useLayout';
+import useBreakpoint from '../../hooks/useBreakpoint';
 
 const PersonalInfo = () => {
     const handleDownloadCV = () => {
@@ -11,9 +12,15 @@ const PersonalInfo = () => {
     };
 
     const { height } = useLayout();
+    const bk = useBreakpoint();
 
     return (
-        <section className={styles.personalContainer} style={{ height }}>
+        <section
+            className={styles.personalContainer}
+            style={{
+                height: ['md', 'lg'].includes(bk as string) ? height : 'auto',
+            }}
+        >
             <h1> Sobre mí </h1>
             <div className={styles.mobileLine} />
             <section className={styles.infoContainer}>
