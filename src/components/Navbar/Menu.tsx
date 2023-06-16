@@ -10,7 +10,7 @@ interface MenuProps {
 const Menu = ({ links }: MenuProps) => {
     return (
         <section className={styles.menuContainer}>
-            <LanguagesButton />
+            {/* <LanguagesButton /> */}
             <div className={styles.menuOptions}>
                 {links.map((link) => (
                     <nav key={link.to}>

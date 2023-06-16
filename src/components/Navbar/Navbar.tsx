@@ -24,7 +24,7 @@ const Navbar = () => {
     };
 
     return (
-        <div id="navbar" className={styles.NavContainer}>
+        <div id='navbar' className={styles.NavContainer}>
             <div className={styles.userContainer}>
                 <h1 className={styles.user}>
                     <Link to='/'> {userName}</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
             </div>
             {isMobile ? (
                 <>
-                    <LanguagesButton />
+                    {/* <LanguagesButton /> */}
                     <div onClick={handdleDrawer} className={styles.burger_icon}>
                         <BurguerMenu />
                     </div>
