@@ -28,7 +28,7 @@ const useBreakpoint = () => {
             if (isBrowser())
                 window.removeEventListener('resize', calcInnerWidth);
         };
-    }, [isBrowser()]);
+    }, [isBrowser(), window]);
 
     return brkPnt;
 };
