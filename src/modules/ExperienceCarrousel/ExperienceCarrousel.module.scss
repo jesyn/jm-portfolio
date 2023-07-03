@@ -1,0 +1,61 @@
+@use './../../styles/colors' as *;
+
+.experienceContainer {
+    background-color: $violet;
+    text-align: center;
+    position: relative;
+    min-height: 300px;
+    padding: 20px 15px 10px 15px;
+}
+
+.experienceList {
+    margin: 15px 10px 10px 10px;
+}
+
+.experienceList h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.experienceList h4 {
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.experienceList p {
+    padding: 20px;
+    font-weight: 300;
+}
+
+.experienceContainer button {
+    background-color: transparent;
+}
+
+.leftButton {
+    position: absolute;
+    top: 40%;
+    left: 5%;
+}
+
+.rightButton {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+}
+
+.desable {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+}

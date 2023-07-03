@@ -1,0 +1,43 @@
+@use './../../styles/colors' as *;
+
+.personalContainer {
+    background-color: $cream;
+}
+
+.personalContainer h1 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 15px;
+}
+
+.line {
+    height: 1px;
+    background-color: $violet;
+    margin: 25px 15px 25px 15px;
+}
+
+.text {
+    margin: 25px 15px 5px 15px;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.personalContainer button {
+    background-color: transparent;
+    border: 2px solid #c0779e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    margin: 15px;
+    padding: 5px;
+    gap: 5px;
+    h3 {
+        text-decoration: none;
+        color: $violet;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

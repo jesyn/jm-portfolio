@@ -1,0 +1,28 @@
+@use './../../styles/colors' as *;
+
+.NavContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: $cream;
+}
+
+.user {
+    margin: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.burger_icon {
+    background-color: $cream;
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .burger_icon {
+        display: none;
+    }
+}

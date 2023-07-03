@@ -1,0 +1,35 @@
+@use './../../styles/colors' as *;
+
+.scrollIconContainer {
+    position: relative;
+}
+
+.scrollIcon {
+    position: fixed;
+    bottom: 40px;
+    right: 25px;
+    z-index: 20;
+
+    background-color: $cream;
+    border: 2px solid $darkBlue;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: $darkBlue;
+    cursor: pointer;
+    animation: 3s ease-in-out infinite;
+    transition: all 0.5s ease-in-out;
+    animation-name: 'moveBtnAnimation';
+    animation-iteration-count: infinite;
+    svg {
+        position: absolute;
+        left: 9px;
+        top: 7px;
+    }
+}
+
+.scrollIcon:hover {
+    background: $greyBlue;
+    color: $cream;
+    border: 2px solid $darkBlue;
+}
