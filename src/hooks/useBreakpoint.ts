@@ -14,16 +14,20 @@ const getDeviceConfig = (width: number) => {
 };
 
 const useBreakpoint = () => {
+    const isBrowser = () => typeof window !== 'undefined';
     const [brkPnt, setBrkPnt] = useState(() =>
-        getDeviceConfig(window.innerWidth)
+        getDeviceConfig(isBrowser() ? window.innerWidth : 0)
     );
 
     useEffect(() => {
         const calcInnerWidth = _.throttle(function () {
-            setBrkPnt(getDeviceConfig(window.innerWidth));
+            setBrkPnt(getDeviceConfig(isBrowser() ? window.innerWidth : 0));
         }, 200);
-        window.addEventListener('resize', calcInnerWidth);
-        return () => window.removeEventListener('resize', calcInnerWidth);
+        if (isBrowser()) window.addEventListener('resize', calcInnerWidth);
+        return () => {
+            if (isBrowser())
+                window.removeEventListener('resize', calcInnerWidth);
+        };
     }, []);
 
     return brkPnt;
