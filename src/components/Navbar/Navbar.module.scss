@@ -22,7 +22,15 @@
 }
 
 @media (min-width: 768px) {
+    .NavContainer {
+        border: 1px solid $violet;
+    }
     .burger_icon {
         display: none;
+    }
+    .userContainer {
+        background-color: $violet;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }

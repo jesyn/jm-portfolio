@@ -1,8 +1,15 @@
 @use './../../styles/colors' as *;
 
-.aboutContainer {
+.container {
     background-color: $cream;
-    padding: 20px 15px 10px 15px;
+}
+
+.aboutContainer {
+    height: 90%;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .aboutContainer h3 {

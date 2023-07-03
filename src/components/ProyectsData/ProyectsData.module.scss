@@ -1,16 +1,16 @@
 @use './../../styles/colors' as *;
 
-.proyectsContainer {
+.container {
     background-color: $cream;
 }
 
-.proyectsContainer h1 {
+.container h1 {
     font-size: 22px;
     font-weight: 400;
     margin-left: 15px;
 }
 
-.line {
+.mobileLine {
     height: 1px;
     background-color: $violet;
     margin: 25px 15px 25px 15px;
@@ -39,7 +39,7 @@
 .proyects img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .proyects h4 {
@@ -71,25 +71,52 @@
     }
 }
 
-.icons {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 15px;
-    a {
+@media (min-width: 768px) {
+    .container {
         display: flex;
+        flex-direction: column;
+        padding-inline: 10%;
+        overflow: auto;
+    }
+    .container h1 {
+        padding-top: 40px;
+    }
+    .mobileLine {
+        display: none;
+    }
+    .proyectline {
+        display: none;
+    }
+    .image {
+        flex-direction: column;
+        gap: 15px;
+        height: 200px;
+    }
+    .desktopLine {
+        height: 1px;
+        background-color: black;
+        width: 100%;
+    }
+    .proyectsContainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 15px;
+    }
+    .iconContainer {
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        align-content: end;
         justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: $violet;
-        gap: 5px;
     }
 }
 
-.hammer {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    span {
-        color: $violet;
+@media (min-width: 1024px) {
+    .proyectsContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+        grid-template-rows: repeat(2, 1fr); /* 2 filas iguales */
+        gap: 15px;
     }
 }

@@ -6,11 +6,11 @@ const userName = process.env.GATSBY_USER_NAME;
 
 const Footer = () => {
     return (
-        <div className={styles.container}>
+        <section id='footer' className={styles.container}>
             <p>
                 © {year} Creado por {userName}
             </p>
-        </div>
+        </section>
     );
 };
 

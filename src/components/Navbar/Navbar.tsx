@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BurguerMenu from './BurguerMenu';
 import { useMediaQuery } from 'react-responsive';
-import { MD } from '../../utils/constants';
+import { SM } from '../../utils/constants';
 import Menu from './Menu';
 import * as styles from './Navbar.module.scss';
 import Drawer from './Drawer';
@@ -10,7 +10,7 @@ import { Link } from 'gatsby';
 
 const Navbar = () => {
     const userName = process.env.GATSBY_USER_NAME;
-    const isMobile = useMediaQuery({ query: `(max-width: ${MD})` });
+    const isMobile = useMediaQuery({ query: `(max-width: ${SM})` });
     const [drawer, setDrawer] = useState(false);
 
     const links = [
@@ -24,13 +24,15 @@ const Navbar = () => {
     };
 
     return (
-        <div className={styles.NavContainer}>
-            <h1 className={styles.user}>
-                <Link to='/'> {userName}</Link>
-            </h1>
+        <div id='navbar' className={styles.NavContainer}>
+            <div className={styles.userContainer}>
+                <h1 className={styles.user}>
+                    <Link to='/'> {userName}</Link>
+                </h1>
+            </div>
             {isMobile ? (
                 <>
-                    <LanguagesButton />
+                    {/* <LanguagesButton /> */}
                     <div onClick={handdleDrawer} className={styles.burger_icon}>
                         <BurguerMenu />
                     </div>
@@ -41,7 +43,7 @@ const Navbar = () => {
                     />
                 </>
             ) : (
-                <Menu />
+                <Menu links={links} />
             )}
         </div>
     );

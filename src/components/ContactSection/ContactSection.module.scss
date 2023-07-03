@@ -9,3 +9,10 @@
     font-weight: 300;
     font-size: 16px;
 }
+
+@media (min-width: 768px) {
+    .contactContainer {
+        justify-content: unset;
+        gap: 20px;
+    }
+}

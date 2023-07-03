@@ -1,0 +1,12 @@
+@use './../../styles/colors' as *;
+
+.container {
+    border: 2px solid $darkBlue;
+}
+
+@media (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

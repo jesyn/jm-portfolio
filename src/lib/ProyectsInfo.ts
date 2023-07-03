@@ -52,7 +52,7 @@ export const proyectsInfo: IProyectsInfo[] = [
     {
         id: 5,
         date: 'May 2023 - Jun 2023',
-        img: { src: '/porfolio.jpg', alt: 'imagen pagina web' },
+        img: { src: '/porfolio.gif', alt: 'imagen pagina web' },
         title: 'porfolio',
         company: 'Freelancer',
         description:
@@ -64,7 +64,7 @@ export const proyectsInfo: IProyectsInfo[] = [
     {
         id: 6,
         date: 'May 2023 - actualidad',
-        img: { src: '/logo-pizza.jpg', alt: 'logo pizzería' },
+        img: { src: '/logo-pizza.png', alt: 'logo pizzería' },
         title: 'pizzería rémolo',
         company: 'Id for ideas',
         description:

@@ -1,0 +1,22 @@
+@use './../../styles/colors' as *;
+
+.menuContainer {
+    display: flex;
+    gap: 30px;
+}
+
+.menuOptions {
+    display: flex;
+    align-items: center;
+    margin: 1rem 2rem 1rem 1rem;
+    gap: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    color: $pink;
+}

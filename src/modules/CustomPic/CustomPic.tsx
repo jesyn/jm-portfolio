@@ -6,28 +6,18 @@ interface CustomPicProps {
     img: string;
     height: string;
     alt: string;
-    label?: string;
-    labelPosition?: 'center' | 'top' | 'bottom';
+    disable?: boolean;
 }
 
-const CustomPic = ({
-    img,
-    height,
-    alt,
-    label,
-    labelPosition,
-}: CustomPicProps) => {
+const CustomPic = ({ img, height, alt, disable }: CustomPicProps) => {
     return (
-        <article className={styles.imgContainer} style={{ height }}>
+        <article
+            className={cn(styles.imgContainer, {
+                [styles['desable']]: disable,
+            })}
+            style={{ height }}
+        >
             <img src={img} alt={alt} />
-            <h2
-                className={cn({
-                    [styles['center']]: labelPosition === 'center',
-                    [styles['top']]: labelPosition === 'top',
-                })}
-            >
-                {label}
-            </h2>
         </article>
     );
 };

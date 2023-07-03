@@ -14,24 +14,35 @@ import { darkBlue } from '../../utils/constants';
 import softSkillPic from './../../../static/soft-skills-pic.jpg';
 import languagesPic from './../../../static/languages.jpg';
 import { ScrollToTopButton } from '../Buttons/Scrolltotop';
-import ProfileLink from '../../modules/ProfileLink/ProfileLink';
+import useBreakpoint from '../../hooks/useBreakpoint';
+import ProfileLinks from '../ProfileLinks/ProfileLinks';
 
 export const Home = () => {
+    const bk = useBreakpoint();
+
     return (
         <>
             <Grid>
                 <>
                     <CustomPic
                         img='/profile-pic.jpg'
-                        height='300px'
+                        height={
+                            ['md', 'lg'].includes(bk as string)
+                                ? '510px'
+                                : '300px'
+                        }
                         alt='imagen de perfil'
                     />
                     <AboutMe />
                     <CustomPic
                         img='/desk.jpg'
-                        height='80px'
+                        height={
+                            ['md', 'lg'].includes(bk as string)
+                                ? '510px'
+                                : '80px'
+                        }
                         alt='imagen de escritorio'
-                        labelPosition='center'
+                        disable={['md'].includes(bk as string) && true}
                     />
                     <Education />
                     <ExperienceCarrousel />
@@ -51,20 +62,9 @@ export const Home = () => {
                         list={languages}
                         background={`url('${languagesPic}')`}
                     />
-                    <ProfileLink
-                        linkUrl='https://github.com/jesyn'
-                        linkData={'Github'}
-                    />
-                    <ProfileLink
-                        linkUrl='https://www.linkedin.com/in/jesica-munoz-avigliano/'
-                        linkData={'Linkedin'}
-                    />
-                    <ProfileLink
-                        linkUrl='jesica.munoz.avigliano@gmail.com'
-                        linkData={'Email'}
-                    />
                 </>
             </Grid>
+            <ProfileLinks />
             <ScrollToTopButton />
         </>
     );

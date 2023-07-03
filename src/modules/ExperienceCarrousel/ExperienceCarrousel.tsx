@@ -31,7 +31,7 @@ const ExperienceCarrousel = () => {
     };
 
     return (
-        <section className={styles.experienceContainer}>
+        <section className={styles.container}>
             <button
                 onClick={handlePreviousClick}
                 className={cn(styles.leftButton, {
@@ -41,17 +41,13 @@ const ExperienceCarrousel = () => {
                 <ChevronLeft />
             </button>
             <article
+                className={styles.experienceContainer}
                 key={experience[currentIndex].id}
-                className={styles.experienceList}
             >
                 <h4>{experience[currentIndex].date}</h4>
                 <h3>{experience[currentIndex].title}</h3>
                 <h4>{experience[currentIndex].company}</h4>
                 <p>{experience[currentIndex].description}</p>
-
-                <Link to='/proyects' className={styles.title}>
-                    {experience[currentIndex].label}
-                </Link>
             </article>
             <button
                 onClick={handleNextClick}
@@ -61,6 +57,9 @@ const ExperienceCarrousel = () => {
             >
                 <ChevronRight />
             </button>
+            <Link to='/proyects' className={styles.title}>
+                {experience[currentIndex].label}
+            </Link>
         </section>
     );
 };

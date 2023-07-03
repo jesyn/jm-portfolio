@@ -1,32 +1,10 @@
-.imgContainer {
-    position: relative;
-}
-
-.center {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.top {
-    top: 10px;
-    left: 50%;
-    transform: translate(-50%, 10px);
-}
-
 .imgContainer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: left;
 }
 
-.imgContainer h2 {
-    position: absolute;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    display: flex;
-    justify-content: center;
+.desable {
+    display: none;
 }
