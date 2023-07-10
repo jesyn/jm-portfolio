@@ -10,15 +10,16 @@ import {
 import { hardSkills, softSkills, languages } from '../../lib';
 
 import Grid from '../Grid/Grid';
-import { darkBlue } from '../../utils/constants';
+import { MD, SM, darkBlue } from '../../utils/constants';
 import softSkillPic from './../../../static/soft-skills-pic.jpg';
 import languagesPic from './../../../static/languages.jpg';
 import { ScrollToTopButton } from '../Buttons/Scrolltotop';
-import useBreakpoint from '../../hooks/useBreakpoint';
 import ProfileLinks from '../ProfileLinks/ProfileLinks';
+import { useMediaQuery } from 'react-responsive';
 
 export const Home = () => {
-    const bk = useBreakpoint();
+    const isMobile = useMediaQuery({ query: `(max-width: ${SM})` });
+    const isTablet = useMediaQuery({ query: `(max-width: ${MD})` });
 
     return (
         <>
@@ -26,23 +27,15 @@ export const Home = () => {
                 <>
                     <CustomPic
                         img='/profile-pic.jpg'
-                        height={
-                            ['md', 'lg'].includes(bk as string)
-                                ? '510px'
-                                : '300px'
-                        }
+                        height={!isMobile ? '510px' : '300px'}
                         alt='imagen de perfil'
                     />
                     <AboutMe />
                     <CustomPic
                         img='/desk.jpg'
-                        height={
-                            ['md', 'lg'].includes(bk as string)
-                                ? '510px'
-                                : '80px'
-                        }
+                        height={!isMobile ? '510px' : '80px'}
                         alt='imagen de escritorio'
-                        disable={['md'].includes(bk as string) && true}
+                        disable={isTablet}
                     />
                     <Education />
                     <ExperienceCarrousel />

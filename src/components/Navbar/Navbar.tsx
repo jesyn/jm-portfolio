@@ -5,7 +5,7 @@ import { SM } from '../../utils/constants';
 import Menu from './Menu';
 import * as styles from './Navbar.module.scss';
 import Drawer from './Drawer';
-import LanguagesButton from './LanguagesButton';
+//import LanguagesButton from './LanguagesButton';
 import { Link } from 'gatsby';
 
 const Navbar = () => {

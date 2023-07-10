@@ -4,7 +4,8 @@ import * as styles from './PersonalInfo.module.scss';
 import cv from './../../../static/CV.pdf';
 import Download from './../Icons/Download';
 import useLayout from '../../hooks/useLayout';
-import useBreakpoint from '../../hooks/useBreakpoint';
+import { useMediaQuery } from 'react-responsive';
+import { SM } from '../../utils/constants';
 
 const PersonalInfo = () => {
     const handleDownloadCV = () => {
@@ -12,14 +13,12 @@ const PersonalInfo = () => {
     };
 
     const { height } = useLayout();
-    const bk = useBreakpoint();
+    const isMobile = useMediaQuery({ query: `(max-width: ${SM})` });
 
     return (
         <section
             className={styles.personalContainer}
-            style={{
-                height: ['md', 'lg'].includes(bk as string) ? height : 'auto',
-            }}
+            style={{ height: isMobile ? 'auto' : height }}
         >
             <h1> Sobre mí </h1>
             <div className={styles.mobileLine} />
