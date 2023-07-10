@@ -1,22 +1,26 @@
 import React from 'react';
-import ProfileLink from '../../modules/ProfileLink/ProfileLink';
 import * as styles from './ProfileLinks.module.scss';
+import { contactLinks } from '../../lib/contactLinks';
+
+export interface IProfileLinkProps {
+    linkUrl: string;
+    linkData: string;
+}
 
 const ProfileLinks = () => {
     return (
         <section className={styles.container}>
-            <ProfileLink
-                linkUrl='https://github.com/jesyn'
-                linkData={'Github'}
-            />
-            <ProfileLink
-                linkUrl='https://www.linkedin.com/in/jesica-munoz-avigliano/'
-                linkData={'Linkedin'}
-            />
-            <ProfileLink
-                linkUrl='mailto:jesica.munoz.avigliano@gmail.com'
-                linkData={'Email'}
-            />
+            {contactLinks.map((contact, index) => (
+                <article key={index} className={styles.profileContainer}>
+                    <a
+                        href={contact.linkUrl}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        {contact.linkData}
+                    </a>
+                </article>
+            ))}
         </section>
     );
 };
