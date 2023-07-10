@@ -13,22 +13,6 @@
     align-items: center;
 }
 
-.educationContainer h3 {
-    font-size: 20px;
-    font-weight: 400;
-}
-
-.educationContainer h4 {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.educationContainer p {
-    font-size: 16px;
-    font-weight: 300;
-    padding: 10px;
-}
-
 .title {
     text-transform: uppercase;
     font-weight: bold;
@@ -38,4 +22,21 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
+}
+
+.certificates {
+    text-align: center;
+    h3 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    h4 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        padding: 10px;
+    }
 }

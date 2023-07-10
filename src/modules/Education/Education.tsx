@@ -1,5 +1,12 @@
 import React from 'react';
 import * as styles from './Education.module.scss';
+import { certificates } from '../../lib/certificates';
+
+export interface ICertificateProps {
+    title: string;
+    institution: string;
+    duration: string;
+}
 
 const Education = () => {
     return (
@@ -8,13 +15,14 @@ const Education = () => {
                 <h2 className={styles.title}> formación </h2>
             </div>
             <article className={styles.educationContainer}>
-                <h3> CERTIFICATE TECH DEVELOPER </h3>
-                <h4> DIGITAL HOUSE</h4>
-                <p> Jun 2021 - Dic 2022 </p>
-                <br />
-                <h3> FRONTEND SPECIALIST </h3>
-                <h4> DIGITAL HOUSE</h4>
-                <p> Feb 2023 - Dic 2023</p>
+                {certificates.map((certificate, index) => (
+                    <div key={index} className={styles.certificates}>
+                        <h3> {certificate.title} </h3>
+                        <h4> {certificate.institution}</h4>
+                        <p> {certificate.duration} </p>
+                        <br />
+                    </div>
+                ))}
             </article>
         </section>
     );
