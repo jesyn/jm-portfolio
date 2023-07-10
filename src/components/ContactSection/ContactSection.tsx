@@ -7,7 +7,6 @@ const ContactSection = () => {
         <section className={styles.contactContainer}>
             <div className={styles.contactInfo}>
                 <p> jesica.munoz.avigliano@gmail.com </p>
-                <p> +54 11 3047 4811</p>
             </div>
             <a
                 href='https://www.linkedin.com/in/jesica-munoz-avigliano/'

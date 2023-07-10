@@ -12,7 +12,6 @@ const Contact = () => {
                 </h3>
                 <div className={styles.contactDetails}>
                     <p> jesica.munoz.avigliano@gmail.com</p>
-                    <p> +541130474811</p>
                 </div>
             </section>
         </article>
