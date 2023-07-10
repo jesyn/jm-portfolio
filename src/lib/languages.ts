@@ -1,1 +1,1 @@
-export const languages = ['español', 'ingles'];
+export const languages = ['español nativo', 'ingles B1'];
