@@ -52,7 +52,7 @@ export const proyectsInfo: IProyectsInfo[] = [
     {
         id: 5,
         date: 'May 2023 - Jun 2023',
-        img: { src: '/porfolio.gif', alt: 'imagen pagina web' },
+        img: { src: '/porfolio10.gif', alt: 'imagen pagina web' },
         title: 'porfolio',
         company: 'Freelancer',
         description:
