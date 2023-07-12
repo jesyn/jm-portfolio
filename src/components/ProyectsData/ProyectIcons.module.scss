@@ -1,0 +1,24 @@
+@use './../../styles/colors' as *;
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: $violet;
+        gap: 5px;
+    }
+}
+
+.hammer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    span {
+        color: $violet;
+    }
+}

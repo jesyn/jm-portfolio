@@ -1,0 +1,18 @@
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.contactInfo p {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .contactContainer {
+        justify-content: unset;
+        gap: 20px;
+    }
+}
