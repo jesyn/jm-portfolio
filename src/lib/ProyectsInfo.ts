@@ -4,7 +4,7 @@ export const proyectsInfo: IProyectsInfo[] = [
     {
         id: 1,
         date: 'Mar 2022 - Dic 2022',
-        img: { src: '/cars-booking.gif', alt: 'gift pagina web' },
+        img: { src: '/cars-booking.gif', alt: 'gif pagina web' },
         title: 'aplicación web',
         company: 'Digital House',
         description:
@@ -16,7 +16,7 @@ export const proyectsInfo: IProyectsInfo[] = [
     {
         id: 2,
         date: 'Feb 2023 - Mayo 2023',
-        img: { src: '/github-search.gif', alt: 'gift pagina web' },
+        img: { src: '/github-search.gif', alt: 'gif pagina web' },
         title: 'buscador usuarios github',
         company: 'Frontend mentor',
         description:
@@ -28,7 +28,7 @@ export const proyectsInfo: IProyectsInfo[] = [
     {
         id: 3,
         date: 'Feb 2023 - Mayo 2023',
-        img: { src: '/rick-and-morty.gif', alt: 'gift pagina web' },
+        img: { src: '/rick-and-morty.gif', alt: 'gif pagina web' },
         title: 'rick and morty',
         company: 'Digital House',
         description:
@@ -39,18 +39,6 @@ export const proyectsInfo: IProyectsInfo[] = [
     },
     {
         id: 4,
-        date: 'Ene 2023 - Mar 2023',
-        img: { src: '/testimonial.gif', alt: 'gift pagina web' },
-        title: 'testimonios deslizantes ',
-        company: 'Frontend mentor',
-        description:
-            '"Testimonios en forma de diapositivas que podrás explorar utilizando controles deslizantes. La sección está desarrollada con React y Sass, y se ha diseñado pensando en la versión móvil como prioridad para asegurar una excelente experiencia de usuario en cualquier dispositivo."',
-        technologies: ['react', 'sass'],
-        github: 'https://github.com/jesyn/-coding-bootcamp-testimonials-slider',
-        url: 'https://jesyn.github.io/-coding-bootcamp-testimonials-slider/',
-    },
-    {
-        id: 5,
         date: 'May 2023 - Jun 2023',
         img: { src: '/porfolio10.gif', alt: 'imagen pagina web' },
         title: 'porfolio',
@@ -60,6 +48,25 @@ export const proyectsInfo: IProyectsInfo[] = [
         technologies: ['gatsby', 'react', 'typescript', 'sass'],
         github: 'https://github.com/jesyn/jm-portfolio',
         url: 'https://jm-portfolio-85f3gfx8w-jesyn.vercel.app/',
+    },
+    {
+        id: 5,
+        date: 'Ago 2023 - Sep 2023',
+        img: { src: '/comics-online.gif', alt: 'gif pagina web' },
+        title: 'Comics online ',
+        company: 'Digital House',
+        description:
+            '"Tienda de cómics en línea, donde podrás encuentrar detalles del mismo junto con sus personajes y un formulario de compra por pasos."',
+        technologies: [
+            'Next.js',
+            'yup',
+            'Material-ui',
+            'Cipress',
+            'Hook form',
+            'TypeScript',
+        ],
+        github: 'https://github.com/jesyn/ctd-esp-fe3-final',
+        url: 'https://comics-online.vercel.app/',
     },
     {
         id: 6,

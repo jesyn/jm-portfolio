@@ -30,11 +30,11 @@ export const experience: IExperienceCarrousel[] = [
     },
     {
         id: 4,
-        date: 'Ene 2023 - Mar 2023',
-        title: 'Control deslizante de testimonios',
-        company: 'Frontend mentor',
+        date: 'Ago 2023 - Sep 2023',
+        title: 'Comics online',
+        company: 'Digital House',
         description:
-            '"Testimonios en forma de diapositivas que podrás explorar utilizando controles deslizantes. La sección está desarrollada con React y Sass, y se ha diseñado pensando en la versión móvil como prioridad para asegurar una excelente experiencia de usuario en cualquier dispositivo."',
+            '"Tienda de cómics en línea, donde podrás encuentrar detalles del mismo junto con sus personajes y un formulario de compra por pasos."',
         label: 'proyecto >',
     },
     {
